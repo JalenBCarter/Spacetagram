@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Spacetagram</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="app-header">
+            <h1 class="header-title">Spacetagram.</h1>
+            <p class="header-description">From NASA's APOD API</p>
+        </div>
+
+        <!-- main card displaying info and image -->
+        <div class="content-card">
+            <!-- flex container for image -->
+            <div class="image-container">
+                <img src="images/loading.jpg" alt="Image of the day from NASA APOD API" id="image" class="image">
+            </div>
+            <!-- info container containing like button, api data, and date selection -->
+            <div id="image-info" class="image-info">
+                <div class="btn-container">
+                    <div src="images/heartSvgRed.svg" alt="Like button" id="like" class="icon not-liked"></div>
+                </div>
+                <h1 id="title" class="title"></h1>
+                <p id="description" class="description"></p>
+                <p id="author" class="author"></p>
+                <p id="date" class="date"></p>
+                <div class="date-container">
+                    <p>Change Date:</p>
+                    <input type="date" id="date-select" class="date-select" default="today">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
